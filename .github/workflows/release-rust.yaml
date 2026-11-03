@@ -66,7 +66,7 @@ jobs:
         with:
           context: ./docker/rust
           file: ./docker/rust/Dockerfile
-          push: true
+          outputs: type=image,push=true,oci-mediatypes=true,compression=zstd,compression-level=3,force-compression=true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha,scope=rust
