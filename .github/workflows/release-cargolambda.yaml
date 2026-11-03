@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: cargolambda
+  IMAGE_NAME: devcontainer-cargolambda
 
 jobs:
   build-and-push:

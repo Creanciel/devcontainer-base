@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: rust
+  IMAGE_NAME: devcontainer-rust
 
 jobs:
   build-and-push:
