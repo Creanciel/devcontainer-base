@@ -4,7 +4,7 @@
 # Declared in the global scope and re-declared right before use in the stage,
 # so bumping a version keeps every layer before its first use cached
 # (layers from that point on are rebuilt).
-ARG RUST_VERSION=1.99.1
+ARG RUST_VERSION=1.100.0
 
 FROM debian:trixie-slim
 

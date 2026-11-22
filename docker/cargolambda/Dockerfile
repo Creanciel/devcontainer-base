@@ -4,16 +4,16 @@
 # Declared in the global scope and re-declared right before use in the stage,
 # so bumping a version keeps every layer before its first use cached
 # (layers from that point on are rebuilt).
-# Rust 1.98+ combined with cargo-zigbuild 0.20.1 (bundled with cargo-lambda 1.9.1)
-# rejects --fix-cortex-a53-843419 when linking for aarch64, so stay on 1.97.
-ARG RUST_VERSION=1.97.1
-ARG CARGO_LAMBDA_VERSION=1.9.1
-ARG MISE_VERSION=v2026.10.25
+ARG RUST_VERSION=1.100.0
+ARG CARGO_LAMBDA_VERSION=1.9.2
+ARG MISE_VERSION=v2026.11.12
+# cargo-zigbuild 0.23.0 (bundled with cargo-lambda 1.9.2) predates Zig 0.17;
+# Zig 0.17 support landed in cargo-zigbuild 0.24.0, so stay on 0.16.
 ARG ZIG_VERSION=0.16.0
-ARG VP_VERSION=1.4.0
-ARG NODE_VERSION=24.21.0
-ARG PNPM_VERSION=12.16.1
-ARG AWS_CDK_VERSION=2.1143.0
+ARG VP_VERSION=1.7.0
+ARG NODE_VERSION=26.13.1
+ARG PNPM_VERSION=12.21.0
+ARG AWS_CDK_VERSION=2.1149.0
 
 FROM debian:trixie-slim
 
