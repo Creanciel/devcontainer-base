@@ -4,9 +4,9 @@
 # Declared in the global scope and re-declared right before use in the stage,
 # so bumping a version keeps every layer before its first use cached
 # (layers from that point on are rebuilt).
-ARG VP_VERSION=1.4.0
-ARG NODE_VERSION=24.21.0
-ARG PNPM_VERSION=12.16.1
+ARG VP_VERSION=1.7.0
+ARG NODE_VERSION=26.13.1
+ARG PNPM_VERSION=12.21.0
 
 FROM debian:trixie-slim
 
