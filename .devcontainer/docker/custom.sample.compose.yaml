@@ -2,5 +2,9 @@
 # Copied to custom.compose.yaml by initializeCommand.sh; edit that copy, it is gitignored.
 services:
   development: {}
-    # volumes:
-    #   - /var/run/docker.sock:/var/run/docker.sock
+
+# services:
+#   development:
+#     volumes:
+#       # git config
+#       - ${HOME}/.config/git:/home/development/.config/git
